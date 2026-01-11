@@ -7,9 +7,60 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Online Store</h1>
-    </header>
+    <h1>Welcome to Our Online Store</h1>
+
+        <header>
+            
+            <!-- LOGO -->
+             <div class="logo">
+                <img src="assets/logo.png" alt="Brand Logo">
+            </div>
+
+            <!-- HAMBUGER MENU(for Mobile) -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- NAVIGATION MENU -->
+             
+            <nav class="nav-menu" id="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav> <br>
+
+            <!-- SEARCH BAR -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search products....">
+                <button>Search</button>
+            </div>
+
+            <!-- SHOPPING CART ICON -->
+            <div class="cart">
+                <img src="assets/icon.png" alt="icon">
+                <span class="cart-count">0</span>
+            </div>
+        </header>
+
+        <section>
+            <div class="hero">
+
+                <div class="hero-content">
+                    <h1 class="fade-in">Biggest Sale of <br>the Year! 🥳🎉 </h1>
+                    <p class="fade-in delay">Discover the latest tends at unbeatable prices. 🎊</p>
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="cta-btn fade-in delay-2">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
     <script src="scripts/app.js"></script>
 </body>
 </html>
