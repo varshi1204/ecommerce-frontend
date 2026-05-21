@@ -2,106 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <meta name="description" content="Shop the latest fashion products online with fast delivery and secure checkout.">
+
     <title>E-Commerce Frontend</title>
 
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- Minified CSS -->
+    <link rel="stylesheet" href="styles/main.min.css">
 
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-
-
+    <!-- Favicon -->
+    <link  rel="icon"  href="assets/favicon.ico"  type="image/x-icon" >
 </head>
+
 <body>
+
     <h1>Welcome to Our Online Store</h1>
 
-        <header>
-            
-            <!-- LOGO -->
-             <div class="logo">
-                <img src="assets/logo.png" alt="Brand Logo">
+    <!-- HEADER -->
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="assets/logo.webp" alt="Brand Logo" width="60" height="60" loading="lazy" >
+        </div>
+
+        <!-- HAMBURGER MENU -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- NAVIGATION MENU -->
+        <nav class="nav-menu" id="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <li>
+                    <a id="loginLink" href="login.html"> Login </a>
+                </li>
+
+                <li>
+                    <button id="logoutBtn"  class="logout-link" type="button" > Logout </button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- SEARCH BAR -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...." >
+            <button>Search</button>
+        </div>
+
+        <!-- SHOPPING CART -->
+        <div class="cart">
+            <img src="assets/cart.svg"  alt="Cart Icon" width="30" height="30" loading="lazy">
+
+            <span class="cart-count">0</span>
+        </div>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-content">
+                <h1 class="fade-in"> Biggest Sale of <br> the Year! 🥳🎉</h1>
+
+                <p class="fade-in delay">
+                    Discover the latest trends at unbeatable prices. 🎊
+                </p>
             </div>
 
-            <!-- HAMBUGER MENU(for Mobile) -->
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
-            <!-- NAVIGATION MENU -->
-             
-            <nav class="nav-menu" id="menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav> <br>
-
-            <!-- SEARCH BAR -->
-            <div class="search-bar">
-                <input type="text" placeholder="Search products....">
-                <button>Search</button>
+            <div class="hero-buttons">
+                <button class="cta-btn fade-in delay-2"> Shop Now </button>
             </div>
 
-            <!-- SHOPPING CART ICON -->
-            <div class="cart">
-                <img src="assets/icon.png" alt="icon">
-                <span class="cart-count">0</span>
-            </div>
-        </header>
-
-        <section>
-            <div class="hero">
-
-                <div class="hero-content">
-                    <h1 class="fade-in">Biggest Sale of <br>the Year! 🥳🎉 </h1>
-                    <p class="fade-in delay">Discover the latest tends at unbeatable prices. 🎊</p>
-                </div>
-
-                <div class="hero-buttons">
-                    <button class="cta-btn fade-in delay-2">Shop Now</button>
-                </div>
-            </div>
         </section>
 
+        <!-- PRODUCTS -->
         <section class="products">
+
             <h2>Feature Products</h2>
 
-            <div class="product-grid" id="productGrid">  <!-- Products will be injected here dynamically -->
+            <div class="product-grid" id="productGrid">
 
-                <!-- Product Card -->
+                <!-- PRODUCT 1 -->
                 <div class="product-card">
-                    <img src="assets/product1.jpg" loading="lazy" alt="product 1">
+
+                    <img src="assets/product1.webp" alt="Jacket" width="300"  height="300" loading="lazy">
+
                     <h3>Jacket</h3>
+
                     <p class="price">$10.99</p>
-                    <button class="btn">Add to Cart</button>
+
+                    <button class="btn"> Add to Cart </button>
+
                 </div>
 
+                <!-- PRODUCT 2 -->
                 <div class="product-card">
-                    <img src="assets/product2.jpg" loading="lazy" alt="product">
+
+                    <img src="assets/product2.webp" alt="T-Shirt" width="300"  height="300" loading="lazy">
+
                     <h3>T-Shirt</h3>
+
                     <p class="price">$9.10</p>
-                    <button class="btn">Add to Cart</button>
+
+                    <button class="btn"> Add to Cart </button>
+
                 </div>
 
+                <!-- PRODUCT 3 -->
                 <div class="product-card">
-                    <img src="assets/product3.jpg" loading="lazy" alt="product">
+
+                    <img src="assets/product3.webp" alt="Jeans" width="300"  height="300" loading="lazy">
+
                     <h3>Jeans</h3>
+
                     <p class="price">$30.89</p>
-                    <button class="btn">Add to Cart</button>
+
+                    <button class="btn"> Add to Cart </button>
+
                 </div>
 
+                <!-- PRODUCT 4 -->
                 <div class="product-card">
-                    <img src="assets/product4.jpg" loading="lazy" alt="product">
+
+                    <img src="assets/product4.webp" alt="Shoes" width="300" height="300" loading="lazy" >
+
                     <h3>Shoes</h3>
+
                     <p class="price">$29.80</p>
-                    <button class="btn">Add to Cart</button>
+
+                    <button class="btn"> Add to Cart </button>
+
                 </div>
+
             </div>
+
         </section>
 
-    <script src="scripts/app.js"></script>
+    </main>
+    <script src="scripts/app.min.js" defer> </script>
+
 </body>
 </html>

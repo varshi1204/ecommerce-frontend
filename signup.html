@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Create your account and shop online securely with our e-commerce store.">
+
+    <title>Sign Up</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/main.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico"type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="assets/logo.webp" alt="Store Logo" width="60" height="60" >
+        </div>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="index.html#products">Products</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+
+                <li>
+                    <button id="logoutBtn" class="logout-link" type="button" > Logout </button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- CART -->
+        <div class="cart">
+            <img src="assets/cart.svg"alt="Cart Icon"width="30"height="30" >
+
+            <span class="cart-count">0</span>
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="auth-page">
+
+        <div class="auth-card">
+
+            <h1>Create Account</h1>
+
+            <!-- SIGNUP FORM -->
+            <form id="signupForm">
+
+                <!-- FULL NAME -->
+                <input 
+                    type="text"
+                    id="signupName"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <!-- EMAIL -->
+                <input 
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Email"
+                    required
+                >
+
+                <!-- PASSWORD -->
+                <div class="password-field">
+
+                    <input 
+                        type="password"
+                        id="signupPassword"
+                        placeholder="Password"
+                        required
+                    >
+                    <span class="toggle-password" data-target="signupPassword" > 👁 </span>
+
+                </div>
+
+                <!-- CONFIRM PASSWORD -->
+                <div class="password-field">
+
+                    <input 
+                        type="password"
+                        id="signupConfirmPassword"
+                        placeholder="Confirm Password"
+                        required
+                    >
+                    <span class="toggle-password" data-target="signupConfirmPassword" > 👁 </span>
+
+                </div>
+
+                <!-- ERROR MESSAGE -->
+                <p id="signupError" class="error"></p>
+
+                <!-- BUTTON -->
+                <button type="submit">  Sign Up </button>
+
+            </form>
+
+            <!-- LOGIN LINK -->
+
+            <p>Already have an account? <a href="login.html"> Login </a> </p>
+
+        </div>
+
+    </main>
+
+    <!-- SCRIPTS -->
+    <script  type="module" src="scripts/app.min.js" defer> </script>
+
+    <script type="module" src="scripts/auth.js"defer > </script>
+
+</body>
+
+</html>
